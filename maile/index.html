@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麦乐迪官网 - 专业KTV娱乐连锁品牌</title>
+    <meta name="description" content="麦乐迪官网为您提供高端量贩式KTV预订、包房查询、欢唱套餐及会员服务。了解麦乐迪最新活动、门店导航与娱乐资讯。">
+    <meta name="keywords" content="麦乐迪官网,麦乐迪KTV,量贩式KTV,欢唱套餐,包房预订,麦乐迪会员,娱乐聚会">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f2f7;
+            color: #2d2a3a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        /* 顶部导航 */
+        .top-header {
+            background: #1a0f2e;
+            padding: 12px 0;
+            font-size: 14px;
+            color: #bfb3d6;
+            border-bottom: 1px solid #2f2142;
+        }
+        .top-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-header a {
+            color: #bfb3d6;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+        .top-header a:hover {
+            color: #f0c6ff;
+        }
+        .top-header .top-right span {
+            margin-left: 20px;
+            font-size: 13px;
+        }
+        /* 主导航栏 */
+        .main-nav {
+            background: #251542;
+            padding: 18px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .main-nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #f7b2ff, #c45aff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 4px 18px rgba(196, 90, 255, 0.4);
+        }
+        .brand-text h1 {
+            font-size: 24px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .brand-text p {
+            font-size: 12px;
+            color: #bba8d9;
+            letter-spacing: 2px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        .nav-links a {
+            color: #e4daf5;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffffff;
+            border-bottom-color: #f0a6ff;
+        }
+        .nav-cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff7ad9, #c45aff);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(196,90,255,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-cta a:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 24px rgba(196,90,255,0.55);
+        }
+        /* 主横幅 */
+        .hero {
+            background: linear-gradient(120deg, #1b0f2f 0%, #3a1d5e 50%, #5c2e8a 100%);
+            color: #fff;
+            padding: 80px 0 90px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,122,217,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content {
+            flex: 1 1 480px;
+        }
+        .hero-content h2 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .hero-content h2 span {
+            background: linear-gradient(90deg, #ff9de2, #d68cff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-content p {
+            font-size: 17px;
+            color: #cdbfe3;
+            margin-bottom: 30px;
+            max-width: 560px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ff7ad9, #c45aff);
+            padding: 14px 32px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(255,122,217,0.4);
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255,122,217,0.5);
+        }
+        .btn-outline {
+            border: 2px solid rgba(255,255,255,0.6);
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: #fff;
+        }
+        .hero-stats {
+            flex: 0 1 360px;
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 36px 32px;
+            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .hero-stats .stat-item {
+            margin-bottom: 26px;
+            text-align: center;
+        }
+        .hero-stats .stat-item:last-child {
+            margin-bottom: 0;
+        }
+        .stat-num {
+            font-size: 38px;
+            font-weight: 800;
+            color: #f0b3ff;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #b7a6cf;
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+        .stat-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.1);
+            margin: 20px 0;
+        }
+        /* 服务特色 */
+        .features {
+            padding: 80px 0 60px;
+            background: #fff;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-header h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1f1533;
+            position: relative;
+            display: inline-block;
+        }
+        .section-header p {
+            color: #8b7ba3;
+            margin-top: 12px;
+            font-size: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .feature-card {
+            background: #faf8fd;
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #eee8f5;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(80,30,120,0.1);
+            border-color: #e2ccf5;
+        }
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f6d1ff, #c45aff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            color: #fff;
+            box-shadow: 0 8px 18px rgba(196,90,255,0.25);
+        }
+        .feature-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2d1b4a;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #7b6b92;
+            line-height: 1.7;
+        }
+        /* 热门套餐 */
+        .packages {
+            padding: 70px 0;
+            background: #f5f0fa;
+        }
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .package-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 24px rgba(60, 20, 90, 0.08);
+            transition: 0.3s;
+            border: 1px solid #f0e7f8;
+        }
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 36px rgba(60, 20, 90, 0.15);
+        }
+        .package-img {
+            height: 180px;
+            background: linear-gradient(135deg, #6b3fa0, #b06ad4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .package-img.small {
+            background: linear-gradient(135deg, #b26ad4, #e59ae0);
+        }
+        .package-img.medium {
+            background: linear-gradient(135deg, #8a4fbf, #d48ae0);
+        }
+        .package-info {
+            padding: 24px;
+        }
+        .package-info h4 {
+            font-size: 20px;
+            color: #241637;
+            margin-bottom: 8px;
+        }
+        .package-desc {
+            font-size: 14px;
+            color: #7b6b92;
+            margin-bottom: 16px;
+        }
+        .package-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f2ecf7;
+            padding-top: 14px;
+        }
+        .package-price {
+            font-size: 24px;
+            color: #c45aff;
+            font-weight: 700;
+        }
+        .package-price small {
+            font-size: 14px;
+            font-weight: 400;
+            color: #9a88b0;
+        }
+        .package-link {
+            background: #f3e9ff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7b2fba;
+            transition: 0.2s;
+        }
+        .package-link:hover {
+            background: #c45aff;
+            color: #fff;
+        }
+        /* 门店展示 */
+        .stores {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .stores-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .store-card {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #eee5f5;
+            transition: 0.3s;
+            background: #faf8fd;
+        }
+        .store-card:hover {
+            box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+        }
+        .store-map {
+            height: 150px;
+            background: linear-gradient(140deg, #d9c7f0, #b69dd8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 40px;
+            opacity: 0.8;
+        }
+        .store-info {
+            padding: 20px 22px;
+        }
+        .store-info h4 {
+            font-size: 18px;
+            margin-bottom: 6px;
+            color: #2d1b4a;
+        }
+        .store-info p {
+            font-size: 13px;
+            color: #7f6f96;
+            margin-bottom: 4px;
+        }
+        .store-phone {
+            margin-top: 12px;
+            color: #a45de0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        /* 会员权益 */
+        .membership {
+            background: linear-gradient(135deg, #2d1b4a, #4d2a70);
+            padding: 80px 0;
+            color: #fff;
+        }
+        .membership .section-header h3 {
+            color: #fff;
+        }
+        .membership .section-header p {
+            color: #c9b6e3;
+        }
+        .member-benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .benefit-item {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .benefit-item:hover {
+            background: rgba(255,255,255,0.14);
+        }
+        .benefit-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        .benefit-item h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .benefit-item p {
+            font-size: 14px;
+            color: #c9b6e3;
+            line-height: 1.6;
+        }
+        /* 最新活动 */
+        .events {
+            padding: 70px 0;
+            background: #f5f0fa;
+        }
+        .events-list {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .event-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background: #fff;
+            border-radius: 14px;
+            padding: 20px 26px;
+            margin-bottom: 16px;
+            border-left: 4px solid #c45aff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            transition: 0.2s;
+        }
+        .event-item:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        .event-date {
+            background: #f3e9ff;
+            color: #7b2fba;
+            border-radius: 12px;
+            padding: 12px 16px;
+            text-align: center;
+            min-width: 70px;
+            font-weight: 700;
+        }
+        .event-date .day {
+            font-size: 24px;
+            line-height: 1.2;
+            display: block;
+        }
+        .event-date .month {
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        .event-info h4 {
+            font-size: 17px;
+            color: #2d1b4a;
+        }
+        .event-info p {
+            font-size: 14px;
+            color: #7f6f96;
+            margin-top: 4px;
+        }
+        /* 常见问题 */
+        .faq {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .faq-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee2f5;
+            padding-bottom: 18px;
+        }
+        .faq-item h4 {
+            font-size: 16px;
+            color: #3a2452;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 22px;
+        }
+        .faq-item h4::before {
+            content: "Q";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #c45aff;
+            font-weight: 800;
+            font-size: 14px;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #6e5d85;
+            padding-left: 22px;
+            line-height: 1.7;
+        }
+        /* 底部 */
+        footer {
+            background: #140a24;
+            color: #a491bf;
+            padding: 50px 0 0;
+            font-size: 14px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+        .footer-brand .brand-text h1 {
+            color: #fff;
+            font-size: 22px;
+        }
+        .footer-brand p {
+            margin-top: 14px;
+            color: #8f7ba8;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+        .footer-col h5 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a {
+            color: #a491bf;
+            transition: 0.2s;
+        }
+        .footer-col ul li a:hover {
+            color: #e3b8ff;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #7a648f;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .packages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stores-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .member-benefits {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .main-nav .container {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 18px;
+            }
+            .hero {
+                padding: 50px 0;
+            }
+            .hero-content h2 {
+                font-size: 30px;
+            }
+            .hero-stats {
+                flex: 1 1 100%;
+                margin-top: 20px;
+            }
+            .packages-grid,
+            .stores-grid {
+                grid-template-columns: 1fr;
+            }
+            .member-benefits {
+                grid-template-columns: 1fr;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .event-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .event-date {
+                margin-bottom: 8px;
+            }
+        }
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .top-header .container {
+                justify-content: center;
+                text-align: center;
+            }
+            .top-header .top-right span {
+                margin-left: 0;
+                margin-right: 10px;
+            }
+            .hero-buttons .btn-primary,
+            .hero-buttons .btn-outline {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部信息栏 -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-left">
+                <a href="#">全国服务热线：400-800-1234</a>
+                <a href="#">门店查询</a>
+            </div>
+            <div class="top-right">
+                <span>周一至周日 10:00 - 次日02:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="brand">
+                <div class="brand-icon">M</div>
+                <div class="brand-text">
+                    <h1>麦乐迪</h1>
+                    <p>MELODY KTV</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">欢唱套餐</a>
+                <a href="#">门店列表</a>
+                <a href="#">会员专区</a>
+                <a href="#">企业聚会</a>
+                <a href="#">品牌故事</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#">立即预订</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主横幅 -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>麦乐迪欢乐时光<br><span>唱享每一刻</span></h2>
+                <p>麦乐迪作为知名量贩式KTV连锁品牌，为您提供高品质音响设备、舒适包房与贴心服务。无论是朋友聚会、生日派对还是公司团建，麦乐迪都是您身边的娱乐首选。</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">在线订房</a>
+                    <a href="#" class="btn-outline">查看套餐</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-num">20+</div>
+                    <div class="stat-label">全国直营门店</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num">500万+</div>
+                    <div class="stat-label">年度欢唱人次</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-num">1500+</div>
+                    <div class="stat-label">主题包房数量</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 服务特色 -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h3>为什么选择麦乐迪</h3>
+                <p>以专业娱乐服务为核心，不断升级用户欢唱体验，让每一次相聚都成为美好回忆。</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">♪</div>
+                    <h4>专业音响</h4>
+                    <p>采用品牌音响系统，配合声学设计方案，还原纯净人声，让演唱更动听。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✦</div>
+                    <h4>主题包房</h4>
+                    <p>从经典复古到现代潮流，不同风格的包房设计满足多样聚会场景需求。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☺</div>
+                    <h4>贴心服务</h4>
+                    <p>训练有素的服务团队，提供点歌辅助、酒水配送等全程无忧的欢唱服务。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♥</div>
+                    <h4>会员礼遇</h4>
+                    <p>麦乐迪会员享有专属折扣、生日礼包、积分兑换等多重尊享权益。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门套餐 -->
+    <section class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h3>热销欢唱套餐</h3>
+                <p>不同时段、不同人数，都能找到合适的欢唱方案，价格透明，超值体验。</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-img">午后轻唱</div>
+                    <div class="package-info">
+                        <h4>午后欢唱套餐</h4>
+                        <p class="package-desc">周一至周五 12:00-18:00，含小食拼盘及软饮畅饮。</p>
+                        <div class="package-meta">
+                            <span class="package-price">¥99 <small>起/3小时</small></span>
+                            <a href="#" class="package-link">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img small">星光夜场</div>
+                    <div class="package-info">
+                        <h4>星光夜场套餐</h4>
+                        <p class="package-desc">晚间黄金时段欢唱，含果盘一份，适合朋友结伴同乐。</p>
+                        <div class="package-meta">
+                            <span class="package-price">¥199 <small>起/4小时</small></span>
+                            <a href="#" class="package-link">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img medium">派对精选</div>
+                    <div class="package-info">
+                        <h4>派对欢聚套餐</h4>
+                        <p class="package-desc">可容纳10-20人的大型包房，附赠生日布置及定制服务。</p>
+                        <div class="package-meta">
+                            <span class="package-price">¥599 <small>起/5小时</small></span>
+                            <a href="#" class="package-link">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 门店展示 -->
+    <section class="stores">
+        <div class="container">
+            <div class="section-header">
+                <h3>门店导航</h3>
+                <p>麦乐迪已覆盖国内多个主要城市，交通便利，欢迎您就近选择门店。</p>
+            </div>
+            <div class="stores-grid">
+                <div class="store-card">
+                    <div class="store-map">📍</div>
+                    <div class="store-info">
+                        <h4>麦乐迪（星光天地店）</h4>
+                        <p>朝阳区建国路88号星光天地购物中心5层</p>
+                        <p>营业时间：10:00-次日02:00</p>
+                        <div class="store-phone">☎ 010-8888 6666</div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-map">📍</div>
+                    <div class="store-info">
+                        <h4>麦乐迪（滨江广场店）</h4>
+                        <p>浦东新区滨江大道1000号滨江广场3层</p>
+                        <p>营业时间：11:00-次日01:00</p>
+                        <div class="store-phone">☎ 021-6666 8888</div>
+                    </div>
+                </div>
+                <div class="store-card">
+                    <div class="store-map">📍</div>
+                    <div class="store-info">
+                        <h4>麦乐迪（天河城店）</h4>
+                        <p>天河区天河路208号天河城购物中心6层</p>
+                        <p>营业时间：10:30-次日02:30</p>
+                        <div class="store-phone">☎ 020-3888 9999</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会员权益 -->
+    <section class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h3>麦乐迪会员俱乐部</h3>
+                <p>加入会员，开启专属欢乐特权，越唱越优惠。</p>
+            </div>
+            <div class="member-benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎵</div>
+                    <h4>会员折扣</h4>
+                    <p>全场套餐享受会员专属折扣，更有会员日特惠活动。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎂</div>
+                    <h4>生日好礼</h4>
+                    <p>生日当月到店欢唱，赠送精美生日套餐一份。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⭐</div>
+                    <h4>积分兑礼</h4>
+                    <p>消费累积积分，可兑换欢唱时长、酒水小食及品牌周边。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新活动 -->
+    <section class="events">
+        <div class="container">
+            <div class="section-header">
+                <h3>近期热门活动</h3>
+                <p>麦乐迪不定期推出主题活动，让每次欢唱都充满新鲜感。</p>
+            </div>
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>春季欢唱季 · 午后时段第二小时半价</h4>
+                        <p>即日起至3月31日，工作日午后时段欢唱，第二小时享半价优惠。</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>麦乐迪会员日 · 双倍积分</h4>
+                        <p>每月22日为麦乐迪会员日，当天消费可获得双倍积分奖励。</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">APR</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>清明小长假 · 家庭欢唱套餐特惠</h4>
+                        <p>清明假期期间，家庭欢唱套餐立减100元，并赠送儿童饮品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h3>常见问题</h3>
+                <p>关于预订、收费与服务，您可能关心的问题都在这里。</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>如何预订麦乐迪包房？</h4>
+                    <p>您可以通过麦乐迪官网在线订房系统、官方客服热线或直接前往门店前台进行预订。周末及节假日建议提前1-2天预订。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>套餐包含哪些内容？</h4>
+                    <p>不同套餐包含的欢唱时长、小食酒水有所不同，具体以各门店当日提供的套餐说明为准，您可在预订时咨询确认。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>是否允许自带酒水？</h4>
+                    <p>出于食品安全及管理规范考虑，麦乐迪暂不支持自带酒水。店内提供丰富的饮品及小食供您选择。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>包房最多可容纳多少人？</h4>
+                    <p>麦乐迪门店设有小、中、大及VIP包房，标准包房可容纳2-20人不等。如需大型聚会场地，请提前与门店联系。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>可以取消或修改预订吗？</h4>
+                    <p>如需取消或修改预订，请至少提前2小时致电门店。部分节假日或活动套餐可能有特殊规则，请以预订确认信息为准。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>麦乐迪有停车场吗？</h4>
+                    <p>大部分麦乐迪门店所在商场均设有停车场，具体停车及减免政策请咨询您所前往的门店。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-text">
+                        <h1>麦乐迪</h1>
+                        <p>MELODY KTV</p>
+                    </div>
+                    <p>麦乐迪致力于为每一位顾客打造轻松、愉悦、高品质的娱乐休闲空间。我们期待与您共同唱响美好时光。</p>
+                </div>
+                <div class="footer-col">
+                    <h5>快速链接</h5>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">欢唱套餐</a></li>
+                        <li><a href="#">门店列表</a></li>
+                        <li><a href="#">会员专区</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>帮助支持</h5>
+                    <ul>
+                        <li><a href="#">预订帮助</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">建议反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>关注我们</h5>
+                    <ul>
+                        <li><a href="#">官方微信</a></li>
+                        <li><a href="#">官方微博</a></li>
+                        <li><a href="#">抖音号</a></li>
+                        <li><a href="#">小红书</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 麦乐迪官网 Melody KTV 版权所有 · 本站仅为品牌展示页面</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+              </html>
